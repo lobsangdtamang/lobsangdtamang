@@ -1,0 +1,14 @@
+$mainColor: #000;
+
+$width: 768px; //Mobile
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+
+
+*{
+    scroll-behavior: smooth;
+}
