@@ -14,7 +14,7 @@
         scrollbar-width: none; //For firefox
 
         @include mobile{
-            top: 50px;
+            top: 40px;
         }
 
         &::-webkit-scrollbar{
