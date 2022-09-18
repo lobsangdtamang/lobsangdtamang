@@ -47,7 +47,6 @@
             margin: 0 30px;
 
             @include mobile{
-                height: 180px;
                 margin: 10px 0px;
             }
 
@@ -55,7 +54,7 @@
 
                 @include mobile{
                     width: 250px;
-                    height: 180px;
+                    height: auto;
                     margin: 1px;
                 }
             }
@@ -69,6 +68,10 @@
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 15px;
+
+                @include mobile{
+                    height: 48px;
+                }
 
                 img{
                     &.left, &.right{
