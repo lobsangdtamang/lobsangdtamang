@@ -1,4 +1,5 @@
-import "./menu.scss"
+import "./menu.scss";
+import{ Link } from "react-router-dom";
 
 export default function Menu({menuOpen, setMenuOpen }) {
   return (
@@ -8,7 +9,7 @@ export default function Menu({menuOpen, setMenuOpen }) {
                 <a href="#intro">Home</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href="#portfolio">Portfolio</a>
+                <Link to="/#portfolio">Portfolio</Link>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
                 <a href="#testimonials">Testimonials</a>
